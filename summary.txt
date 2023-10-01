@@ -1,0 +1,45 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+
+Firstly, I chose Python as the programming language for the coding exercise. 
+Python is known for its simplicity and readability, making it a popular choice for various applications, 
+including web development and developing APIs. Furthermore, it has a rich ecosystem of libraries and tools, such as FastAPI 
+which can help me build REST API more efficiently.
+
+Secondly, I chose FastAPI as the web framework for building REST APIs. After researching, I found that
+FastAPI is a modern, high-performance web framework designed for building APIs. It offers several advantages, such as:
+- Great performance: FastAPI is built on top of high-performance libraries like Pydantic and Uvicorn
+- Automatic documentation: FastAPI generates interactive API documentation, which can help developers understand and 
+test the API endpoints more easily
+- Easy to use and short
+
+Lastly, Pydantic's BaseModel was used for data validation and parsing, which greatly helped with receiving response request and
+validating whether the input was sufficient (POST method)
+
+2. What are the advantages and disadvantages of your solution?
+
+Advantages:
+- With the help of FastAPI and python, to make an endpoint, we just need to have "@app.(post/get/put/delete/("link/to/request", status_code=200)".
+Comparing with other programming language and libraries, this code implementation for functions for HTTP's methods is much more easier, 
+faster and reader-friendly.
+
+- My solution uses "transaction.json" as a place for holding past transactions and balances of each payer as arrays. Thus, it is
+easy to add and get the transaction history and the balance in an instant ("/add" and "/balance"), as when transaction came 
+through the balance is updated right after automatically.
+
+- With such array, the transactions array can be easily sorted by timestamp and help deducting the user's point spent from payer's balance
+efficiently. Furthermore, in transaction array, the "afterpay points" parameter help keep track whether the points in that transactions
+are spent already in previous user's point spent. Therefore, it can handle as many times as user's point spent, as long as the amount 
+spent does not exceed total points available (else it will return error status code). 
+
+Disadvantages:
+- As my solution relies on external libraries like FastAPI, it might introduce potential issues that may took some time to fix
+or make it harder to set up and run the code. Furthermore, it is unknown for my solution would perform with increased traffic, which might
+slow down the performance a little bit.
+
+- In the spending points part, although "afterpay points" parameter help keep track points after several user's point spent, the main
+problem is that it goes through every transaction that have already been deducted already in previous point spent. Therefore, in cases with
+a very large number of transactions (over 1000000 for example), the algorithm still have to go through almost all of them. I believe
+the more optimal case to have a pointer pointing to the earliest available transaction that can be used for spending points, skipping 
+unnecessary parts.
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
