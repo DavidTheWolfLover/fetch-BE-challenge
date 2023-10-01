@@ -29,11 +29,11 @@ python main.py
 - You can try sending the above requests by:
     1. Open local API docs [http://localhost:8000/docs](http://localhost:8000/docs)
 
-    2. Click on the method you want to try ![Method selection screen](img01.png)
+    2. Click on the method you want to try ![Method selection screen](img/img01.png)
 
-    3. Click "Try it out" and insert your request body (if appear) ![Try it out](img02.png)
+    3. Click "Try it out" and insert your request body (if appear) ![Try it out](img/img02.png)
 
-    4. Click "Execute" and see the following output (status code, response body, etc.) ![Execute button](img03.png)
+    4. Click "Execute" and see the following output (status code, response body, etc.) ![Execute button](img/img03.png)
 
 ## Copyright
 
