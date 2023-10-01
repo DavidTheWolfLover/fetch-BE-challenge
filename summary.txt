@@ -43,3 +43,14 @@ the more optimal case to have a pointer pointing to the earliest available trans
 unnecessary parts.
 
 3. What has been a favorite school/personal project thus far? What about it that challenged you?
+
+Out of the projects I have done before, "Pacman Reborn" leaves me deepest impression. In this project, I led a 2-student team to develop a 
+Pacman game using the Pygame package. Although it was a project for my high school class, the topic was creativity, 
+meaning that this is the first time ever I have to make something by myself.Our team all have to research the layout, design and 
+algorithm for building up a normal "Pacman" game. Then, we have to split part of the game to each teammate's skills and capabilities. 
+For my part, which is also the most challenging part, was implementing AI evaluating functions and node-finding algorithms for the ghost AI. 
+We wanted to make the ghosts intelligent enough to chase and catch the players. It was then I realized how this was to be part of software 
+development cycle: research, build, test, and repeat. Although frustrating and tiring, after months of coding, testing, and debugging, 
+I was able to create the ghost AI that was so successful that it beats beating over more than thirds of my class. Seeing the game running 
+smoothly with challenging ghosts was a fantastic feeling. This invaluable experience had taught me the importance of persistence, 
+collaboration, researching, and problem-solving skills in programming.
