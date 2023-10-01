@@ -112,3 +112,6 @@ def get_balance():
     all_balance = {b["payer"]: b["points"] for b in balances}
     return all_balance
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", reload=True)
